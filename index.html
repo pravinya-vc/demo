@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Manager</h1>
+
+
+
+<div class="container">     
+    <h3>Date</h3>
+    <input type="date" id="date" name="date"><br> 
+<br>
+    <!-- <form id="frm"  >
+        <label for="Bank">Bank balance: </label>
+        <input type="number" id="bank" name="user" required onclick="myFun()"><br><br>
+        <label for="Cash">Cash balance: </label>
+        <input type="number" id="cash" name="user" required onclick="myFun()"><br>
+        <input type="submit" value="Submit">
+      </form>  -->
+
+<h3>Type</h3>
+<input type="radio" name="tab" value="igottwo" onclick="show5();" />
+Income <br><br>
+<input type="radio" name="tab" value="igottwo" onclick="show4();" />
+Expense <br><br><hr> 
+
+<div id="div1" class="hide">
+<input type="radio" value="Yes" name="one">
+Salary &nbsp;<br>
+<input type="radio" value="Yes" name="one">
+Interest<br>
+<input type="radio" value="Yes" name="one">
+Misc <br> <hr>
+</div>
+
+<div id="div2" class="hide">
+<input type="radio" value="Yes" name="two">
+Household &nbsp;<br>
+<input  type="radio" value="Yes" name="three"> 
+Bills<br>
+<input type="radio" value="Yes" name="four">
+Food<br>       
+<input type="radio" value="Yes" name="five">
+Fuel <br>
+<input type="radio" value="Yes" name="six">
+Health<br>
+<input type="radio" value="Yes" name="seven">
+Shopping<hr>
+</div>
+
+
+<h4>Expense Tags</h4>
+<let id="div3">
+<input type="checkbox" onclick="unCheck()">Household<br>
+<input type="checkbox" onclick="unCheck()">Rent<br>
+<input type="checkbox" onclick="unCheck()">Furniture<br>
+<input type="checkbox" onclick="unCheck()">Decor<br>
+<input type="checkbox" onclick="unCheck()">Electronics<br>
+<hr>
+  <h4>Expense Categories</h4>
+<div id="div2">
+<input type="radio" name="tab" value="igtto" onclick="show6();" />
+Bills<br><br>
+<div id="pr" class="hide">
+<input type="checkbox" value="Yes" name="hi">
+Electricity &nbsp;<br>
+<input type="checkbox" value="Yes" name="hi">
+Gas<br>
+<input type="checkbox" value="Yes" name="hi">
+Water <br>
+<input type="checkbox" value="Yes" name="hi">
+Househelp <br><hr>
+</div>
+
+<input type="radio" name="tab" value="igtto" onclick="show0();" />
+Food<br><br>
+<div id="pra" class="hide">
+<input type="checkbox" value="Yes" name="hi">
+Groceries &nbsp;<br>
+<input type="checkbox" value="Yes" name="hi">
+Eating out<br>
+<hr>
+</div>
+
+<input type="radio" name="tab" value="igtto" onclick="show01();" />
+Fuel<br><br>
+<div id="prav" class="hide">
+<input type="checkbox" value="Yes" name="hi">
+Motorcycle &nbsp;<br>
+<input type="checkbox" value="Yes" name="hi">
+Car<br>
+<hr>
+</div>
+
+<input type="radio" name="tab" value="igtto" onclick="show9();" />
+Health<br><br>
+<div id="pri" class="hide">
+<input type="checkbox" value="Yes" name="hlo">
+Doctor/Medicine &nbsp;<br>
+<input type="checkbox" value="Yes" name="hlo">
+Sport Activity<br>
+<hr>
+</div>
+
+<input type="radio" name="tab" value="igtto" onclick="show8();" />
+Shopping<br><br>
+<div id="priy" class="hide">
+<input type="checkbox" value="Yes" name="hllo">
+Personal &nbsp;<br>
+<input type="checkbox" value="Yes" name="hllo">
+Gift<br>
+<hr>
+</div>
+</div>
+<!-- <script src="script.js"></script> -->
+</div>
+
+
+<div class="container2">
+<h4>Your Balance</h4>
+<h3 id="balance">0.00</h3>
+
+<div class="inc-exp-container">
+<div>
+<h4>Income</h4>
+      
+<p id="money-plus" class="money plus">+0.00</p>
+</div>
+<div>
+<h4>Expense</h4>
+<p id="money-minus" class="money minus">-0.00</p>
+</div>
+     
+</div>
+
+<h3>History</h3>
+<ul id="list" class="list">
+</ul>
+
+<h3>Add New Transaction</h3>
+<form id="form">
+<div class="form-control">
+<label for="text">Expense:</label>
+<input type="text" id="text" placeholder="Enter the expense"><br>
+</div>
+<br>
+<div class="form-control">
+<label for="amount">Amount <br> ( -  for Expense, + for Income)</label><br><br>
+<label for="text">Income:</label>
+<input type="text" id="amount" placeholder="Enter Amount...">
+</div>
+<br>
+<button class="btn">Add transaction</button>
+</form>
+<h5>Remarks:</h5>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea><br>
+<button type="button" onclick="myFunction()">Submit!</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+                                                                                                         

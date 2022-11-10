@@ -1,0 +1,168 @@
+body {
+    font-family: arial;
+  }
+  .hide {
+    display: none;
+  }
+h1{
+    text-align: center;
+    color: rgb(19, 58, 70);
+    margin-top: 50px;
+    background-color:rgb(229, 237, 238) ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container,.container2{
+   justify-content: center;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 10px;
+   border: 1px solid black;
+   outline-style: solid;
+   outline-color: rgb(209, 191, 191);
+   outline-width: 2px;
+   background: linear-gradient(to right, #edf8fc, #04c0ff,#54859b);
+}
+.h3{
+    color: #35505c;
+}
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.plus {
+  color: #1ecf68;
+
+}
+
+.minus {
+color:  #eb1745;
+}
+.form-control {
+  display:flex;
+  flex-direction:column;
+  
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 1px solid #dedede;
+
+    border-radius: 3px;
+    flex:1;
+    font-size: 16px;
+    padding:7px;
+    max-width:200px;
+    width:100%;
+}
+.btn {
+  background-color: #2d6161;
+  box-shadow: var(--box-shadow);
+  color:#fff;
+  border:0;
+  font-size: 16px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width:100%;
+  max-width:310px;
+}
+.list {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  list-style: none;
+ /* padding-bottom: 10px; */
+  margin:1px;
+  margin-bottom: 60px;
+  width:300px;
+  height: 5px;
+  /* float: left; */
+
+}
+
+
+.list li {
+  background: white;
+  width:100%;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+  padding:10px;
+  margin: 10px 0;
+  
+
+}
+.list li.plus {
+  border-right: 5px solid #12e635;
+}
+
+.list li.minus {
+  border-right: 5px solid #e21b1b
+}
+.form-control {
+  display:flex;
+  flex-direction:column;
+  
+  
+
+}
+.delete-btn {
+  background-color: #e01818;
+  border:0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position:absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity:0;
+  transition: .4s ease;
+
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list li:hover  .delete-btn {
+  opacity:1;
+}
+button {
+  cursor:pointer;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  display:flex;
+  justify-content: space-between;
+  max-width:100%;
+  width:320px;
+
+}
+
+.inc-exp-container > div {
+  flex:1;
+  text-align: center;
+
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+
+}
+
+
+
+ 
+  
